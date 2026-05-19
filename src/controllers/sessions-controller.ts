@@ -31,7 +31,7 @@ export class SessionsController {
 
     const token = sign({ role: user.role ?? "customer" }, secret, {
       subject: user.id,
-      expiresIn,
+      expiresIn: "1d",
     });
 
     return response.json({ token });
