@@ -6,6 +6,13 @@ info:
 http:
   method: POST
   url: "{{BASE_URL}}/{{RESOURCE}}"
+  body:
+    type: json
+    data: |-
+      {
+        "email": "matheuss@email.com",
+        "passwrod": "12345678"
+      }
   auth: inherit
 
 runtime:
