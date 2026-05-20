@@ -4,9 +4,11 @@ info:
   seq: 1
 
 http:
-  method: GET
+  method: POST
   url: "{{BASE_URL}}/{{RESOURCE}}"
-  auth: inherit
+  auth:
+    type: bearer
+    token: "{{token}}"
 
 runtime:
   variables:

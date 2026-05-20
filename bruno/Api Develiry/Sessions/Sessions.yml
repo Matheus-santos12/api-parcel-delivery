@@ -11,7 +11,7 @@ http:
     data: |-
       {
         "email": "matheuss@email.com",
-        "passwrod": "12345678"
+        "password": "12345678"
       }
   auth: inherit
 
@@ -19,6 +19,11 @@ runtime:
   variables:
     - name: RESOURCE
       value: sessions
+  scripts:
+    - type: after-response
+      code: |-
+        const json = res.getBody();
+        bru.setEnvVar("token", json.token)
 
 settings:
   encodeUrl: true
