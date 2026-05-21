@@ -11,7 +11,7 @@ http:
     data: |-
       {
         "user_id": "7afcd84e-a2b1-48d2-bfba-00719278e68f",
-        "description": "Fone de ouvido"
+        "description": "Monitor 8K"
       }
   auth:
     type: bearer

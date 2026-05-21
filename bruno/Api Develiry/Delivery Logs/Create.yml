@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-        "delivery_id": "a129de03-6576-4a21-9d21-4d4fd2436188",
-        "description": "Chegou no local de distribuição"
+        "delivery_id": "40a92a90-fb78-4eaa-bf72-7d0c77919594",
+        "description": "Saiu para ser entregue"
       }
   auth:
     type: bearer
