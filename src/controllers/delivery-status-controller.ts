@@ -22,6 +22,6 @@ export class DeliveriesStatusController {
       where: { id },
     });
 
-    return response.json();
+    return response.json({ status });
   }
 }

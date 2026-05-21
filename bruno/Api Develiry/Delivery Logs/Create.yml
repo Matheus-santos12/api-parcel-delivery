@@ -6,6 +6,13 @@ info:
 http:
   method: POST
   url: "{{BASE_URL}}/{{RESOURCE}}"
+  body:
+    type: json
+    data: |-
+      {
+        "delivery_id": "a129de03-6576-4a21-9d21-4d4fd2436188",
+        "description": "Chegou no local de distribuição"
+      }
   auth:
     type: bearer
     token: "{{token}}"
