@@ -20,6 +20,10 @@ export class DeliveryLogsController {
       throw new AppError("delivery not found", 404);
     }
 
+    if (delivery.status === "delivered") {
+      throw new AppError("this order has already been delivered");
+    }
+
     if (delivery.status === "precessing") {
       throw new AppError("change status to shipped");
     }
