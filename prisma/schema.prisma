@@ -13,7 +13,7 @@ enum UserRole {
 }
 
 enum DeliveryStatus {
-  precessing
+  processing
   shipped
   delivered
 }
@@ -39,7 +39,7 @@ model Delivery {
   userId      String @map("user_id")
   description String
 
-  status DeliveryStatus @default(precessing)
+  status DeliveryStatus @default(processing)
 
   user User          @relation(fields: [userId], references: [id])
   logs DeliveryLog[]
