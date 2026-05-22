@@ -24,7 +24,7 @@ export class DeliveryLogsController {
       throw new AppError("this order has already been delivered");
     }
 
-    if (delivery.status === "precessing") {
+    if (delivery.status === "processing") {
       throw new AppError("change status to shipped");
     }
 
