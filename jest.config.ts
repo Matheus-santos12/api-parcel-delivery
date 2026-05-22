@@ -6,9 +6,9 @@ const config: Config = {
   coverageProvider: "v8",
   preset: "ts-jest",
   testEnvironment: "node",
-  testMatch: ["<rootDir/src/**/*.test.ts"],
+  testMatch: ["<rootDir>/src/**/*.test.ts"],
   moduleNameMapper: {
-    "^@/(.*)$": "<rootDir/src/$1",
+    "^@/(.*)$": "<rootDir>/src/$1",
   },
 };
 
